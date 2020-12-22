@@ -1,4 +1,4 @@
-from gshell import *
+from kavaca import *
 
 # flow #
 print('starting repl...')
