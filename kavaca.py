@@ -53,7 +53,7 @@ def cmd_l(args):
   print('rn <imgin> <slen>                => revelation: <imgin> -> data[slen] + img')
   print('rz <imgin> <eofchar>             => revelation: <imgin> -> data[0:indexof(eofchar)] + img')
   print('df <imgin>                       => check embeddable (free) space in <imgin>')
-  print('l|h                              => this help menu')
+  print('l|h|help                         => this help menu')
   print('exit|x|X|bye|Q|q|quit            => quit program')
 
 # the global command map #
@@ -64,7 +64,8 @@ cmdmap={
   'rz':cmd_rz,
   'df':cmd_df,
   'l':cmd_l,
-  'h':cmd_l
+  'h':cmd_l,
+  'help':cmd_l
 }
 
 def interpretcmd(cmd,params):
